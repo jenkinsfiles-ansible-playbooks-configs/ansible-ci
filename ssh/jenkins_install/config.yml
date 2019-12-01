@@ -3,6 +3,6 @@ extra_args:
 git_branches_playbook: */master
 git_branches_ansible_config: */master
 git_url_ansible_config: https://github.com/TomonoriMatsumura/ansible-cfg.git
-git_url_playbook: https://github.com/ansible-playbooks-centos7/chrome.git
-inventory_parameters: -i /home/ansible/.ansible_inventories/ansible-ci -l chrome
+git_url_playbook: https://github.com/ansible-playbooks-centos7/jenkins_install.git
+inventory_parameters: -i /home/ansible/.ansible_inventories/ansible-ci -l jenkins_ssh
 ssh_private_key: centos7.pem

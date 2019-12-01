@@ -1,0 +1,8 @@
+ansible_playbook: local-executor.yml
+extra_args: -e 'work_dir=/tmp/ansible' -e 'git_url=https://github.com/ansible-playbooks-centos7/ansible-awx.git' -e 'playbook_name=install.yml'
+git_branches_playbook: */master
+git_branches_ansible_config: */master
+git_url_ansible_config: https://github.com/TomonoriMatsumura/ansible-cfg.git
+git_url_playbook: https://github.com/ansible-playbooks-centos7/local-executor.git
+inventory_parameters: -i /home/ansible/.ansible_inventories/ansible-ci -l awx_local
+ssh_private_key: centos7.pem
