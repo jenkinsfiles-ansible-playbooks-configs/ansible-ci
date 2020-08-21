@@ -1,0 +1,10 @@
+---
+ansible_playbook: install.yml
+extra_args:
+git_branches_ansible_config: */master
+git_branches_playbook: */master
+git_credentials_id: jenkins.ansible
+git_url_ansible_config: https://github.com/TomonoriMatsumura/ansible-cfg.git
+git_url_playbook: https://github.com/ansible-playbooks-centos7/vnc-server.git
+inventory_parameters: -i /var/lib/jenkins/.ansible_inventories/vnc
+ssh_private_key: centos7.pem
